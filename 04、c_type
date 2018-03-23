@@ -1,0 +1,18 @@
+typedef unsigned short uint16_t;
+typedef unsigned char uint8_t;
+use %hd to scanf and printf a uint16_t data.
+
+implicit declaration of function ‘usleep’ 
+-std=gnu99
+
+setting above are error
+change input as int ,but we can convert it into a unsigned int
+int TIMx_CH[4]={0};
+int CRC_NUM=0;
+uint16_t arr[4]={0};
+uint8_t pwm_message[12]={0};  
+uint8_t ack_message[12]={0};
+ pwm_message[10]=((uint16_t)CRC_NUM>>8);
+ pwm_message[11]=((uint16_t)CRC_NUM);
+ scanf("%d %d %d %d",&TIMx_CH[0],&TIMx_CH[1],&TIMx_CH[2],&TIMx_CH[3]);
+ remeber to add "&"!!!

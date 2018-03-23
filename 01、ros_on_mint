@@ -1,0 +1,14 @@
+因为serina基于16.04内核的，所以可以直接安装
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+把$(lsb_release -sc) 改成xenial,后续步骤正常
+build from source 
+
+编译 ROS-Comm 之前需要安装libconsole-bridge-dev和liblz4-dev
+rosdep install --from-paths src --ignore-src --rosdistro kinetic -y -r --os=ubuntu:xenial
+
+echo "source ~/ros_catkin_ws/install_isolated/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+ok with barebose
+
+libpyside2-dev
+pyside2

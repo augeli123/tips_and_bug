@@ -1,0 +1,51 @@
+arm-gcc 7.X 将导致1.7之前的固件编译失败,推荐使用5.4版本,
+ubuntu 16.04 desktop && linux mint
+
+修改权限
+sudo usermod -a -G dialout $USER
+sudo apt-get remove modemmanager
+安装工具链
+
+# 必备软件
+sudo apt-get install python-argparse git-core wget zip \
+    python-empy qtcreator cmake build-essential genromfs -y
+# 仿真工具
+sudo add-apt-repository ppa:openjdk-r/ppa
+sudo apt-get update
+sudo apt-get install openjdk-8-jre
+sudo apt-get install ant protobuf-compiler libeigen3-dev libopencv-dev openjdk-8-jdk openjdk-8-jre clang-3.5 lldb-3.5 -y
+sudo apt-get install python-serial openocd \
+    flex bison libncurses5-dev autoconf texinfo build-essential \
+    libftdi-dev libtool zlib1g-dev \
+    python-empy  -y
+    sudo apt-get remove gcc-arm-none-eabi gdb-arm-none-eabi binutils-arm-none-eabi gcc-arm-embedded
+sudo add-apt-repository --remove ppa:team-gcc-arm-embedded/ppa
+
+use arm-gcc 5.4  <NOT 4.9 OR 7.X>
+http://46aae4d1e2371e4aa769798941cef698.devproxy.yunshipei.com/zhengyangliu123/article/details/54783443
+sudo apt-get isntall lsb-core
+
+编译源码：
+git clone https://github.com/PX4/Firmware.git
+git branch -a
+git checkout beta //it is import to build a stable version
+cd Firmware
+git submodule update --init --recursive
+
+make px4fmu-v2_default
+
+
+
+在启动Qt creator之前, 需要先创建工程文件 :
+
+cd ~/src/Firmware
+mkdir ../Firmware-build
+cd ../Firmware-build
+cmake ../Firmware -G "CodeBlocks - Unix Makefiles" -DCONFIG=nuttx_px4fmu-v2_default
+
+接着启动Qt creator（如果系统没安装Qt Creator 百度一下linux下安装Qt Creator，然后再启动Qt Creator）并加载 Firmware 根目录下 CMakeLists.txt 文件，步骤：点击工具栏 File -> Open File or Project -> Select the CMakeLists.txt file 。 如果加载提示ninja没有安装，请按照“高级Linux”章节进行ninja编译工具的安装，安装完成后，log out（登出）并log in（登入）。
+
+加载了文件后，点击左侧projects按钮，在run onfiguration栏选择'custom executable',在executable 栏里输入'make'， argument栏输入 'upload'，将‘play’按钮配置成运行工程。
+
+eclipse中
+Window > Show View > Make Targets 

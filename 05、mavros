@@ -1,0 +1,19 @@
+1、install software
+cd ~/catkin_ws/src
+git clone https://github.com/mavlink/mavros.git
+
+sudo apt-get install ros-kinetic-mavlink
+sudo apt-get install ros-kinetic-geometry
+sudo apt-get install ros-kinetic-control-toolbox
+sudo apt-get install libgeographic-dev
+sudo apt-get install geographiclib-tools
+sudo apt-get install ros-kinetic-geographic-msgs 
+
+or on ubuntu14.04
+sudo apt-get install ros-indigo-mavros ros-indigo-mavros-extras ros‐indigo‐control‐toolbox
+
+Run install_geographiclib_dataset.sh script in order to install Geoid Model dataset!
+cd ~/catkin_ws/src/mavros/mavros/scripts/
+sudo ./install_geographiclib_datasets.sh
+接下来运行catkin_make
+2、use commander

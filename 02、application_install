@@ -1,0 +1,49 @@
+arm-gcc
+sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
+sudo apt-get update
+sudo apt-get install libnewlib-arm-none-eabi
+java8
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+
+eclispe views_setting
+[windows]-[show view]-[other]
+
+eclipse for arm 
+http://gnuarmeclipse.sourceforge.net/updates 
+
+use stm32flash to download file to board
+./stm32flash /dev/ttyS0
+Write with verify and then start execution:
+./stm32flash -w filename -v -g 0x0 /dev/ttyS0
+Read flash to file:
+./stm32flash -r filename /dev/ttyS0
+Start execution:
+./stm32flash -g 0x0 /dev/ttyS0
+
+cannot use stm32flash download hex to board.
+
+qt5 
+qmake error
+sudo apt-get isntall g++
+sudo apt-get install  libglu1-mesa-dev
+
+ruby 2.2
+sudo apt-add-repository ppa:brightbox/ruby-ng
+sudo apt-get update
+sudo apt-get install ruby2.2 ruby2.2-dev
+
+stlink_V2
+git clone https://github.com/texane/stlink.git
+cd stlink
+make
+cd build/Release
+sudo make install
+
+make  PREFIX=/usr/install
+export LD_LIBRARY_PATH=/usr/local/lib
+
+
+cp st-flash to /usr/bin
+st-flash write test.bin 0x8000000  // can download bin into board
