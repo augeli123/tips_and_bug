@@ -15,9 +15,8 @@ sudo apt-get update
 sudo apt-get install openjdk-8-jre
 sudo apt-get install ant protobuf-compiler libeigen3-dev libopencv-dev openjdk-8-jdk openjdk-8-jre clang-3.5 lldb-3.5 -y
 sudo apt-get install python-serial openocd \
-    flex bison libncurses5-dev autoconf texinfo build-essential \
-    libftdi-dev libtool zlib1g-dev \
-    python-empy  -y
+    flex bison libncurses5-dev autoconf texinfo  \
+    libftdi-dev libtool zlib1g-dev  -y
     sudo apt-get remove gcc-arm-none-eabi gdb-arm-none-eabi binutils-arm-none-eabi gcc-arm-embedded
 sudo add-apt-repository --remove ppa:team-gcc-arm-embedded/ppa
 
