@@ -23,6 +23,8 @@ sudo add-apt-repository --remove ppa:team-gcc-arm-embedded/ppa
 
 use arm-gcc 5.4  <NOT 4.9 OR 7.X>
 http://46aae4d1e2371e4aa769798941cef698.devproxy.yunshipei.com/zhengyangliu123/article/details/54783443
+sudo gedit /etc/profile
+export PATH=$PATH:/opt/gcc-arm-none-eabi-5_4-2016q3/bin
 sudo apt-get isntall lsb-core
 
 编译源码：
