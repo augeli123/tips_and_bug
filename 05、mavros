@@ -17,3 +17,5 @@ cd ~/catkin_ws/src/mavros/mavros/scripts/
 sudo ./install_geographiclib_datasets.sh
 接下来运行catkin_make
 2、use commander
+对于server版的ubuntu，使用修复cdrom导致的软件源无法更新的问题
+sudo nano /etc/apt/sources.list
