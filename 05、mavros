@@ -11,7 +11,7 @@ sudo apt-get install ros-kinetic-geographic-msgs
 
 or on ubuntu14.04
 sudo apt-get install ros-indigo-mavros ros-indigo-mavros-extras ros‐indigo‐control‐toolbox
-
+无论是源码安装还是直接从源安装都需要进行install Geoid Model dataset
 Run install_geographiclib_dataset.sh script in order to install Geoid Model dataset!
 cd ~/catkin_ws/src/mavros/mavros/scripts/
 sudo ./install_geographiclib_datasets.sh
