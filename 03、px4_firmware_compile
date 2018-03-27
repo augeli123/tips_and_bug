@@ -9,8 +9,6 @@ sudo apt-get remove modemmanager
 # 必备软件
 sudo apt-get install genromfs 
 # 仿真工具
-sudo add-apt-repository ppa:openjdk-r/ppa
-sudo apt-get update
 sudo apt-get install openjdk-8-jre
 sudo apt-get install ant protobuf-compiler libeigen3-dev  openjdk-8-jdk openjdk-8-jre clang-3.5 lldb-3.5 -y
 sudo apt-get install python-serial openocd \
