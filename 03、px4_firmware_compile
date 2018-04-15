@@ -18,8 +18,8 @@ sudo apt-get install python-serial openocd \
 use arm-gcc 5.4  <NOT 4.9 OR 7.X>
 sudo gedit /etc/profile
 export PATH=$PATH:/opt/gcc-arm-none-eabi-5_4-2016q3/bin
-sudo apt-get isntall lsb-core
-sudo apt-get install python-jinja2 		
+
+sudo apt-get install python-jinja2 python-pip  lsb-core
 sudo pip install numpy toml
 
 编译源码：
