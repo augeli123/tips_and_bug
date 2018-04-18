@@ -17,3 +17,9 @@ pyside2
 boot-repair
 sudo add-apt-repository ppa:yannubuntu/boot-repair && sudo apt-get update
 sudo apt-get install -y boot-repair && boot-repair
+
+安装配置terminator
+$ sudo apt-get install dconf-tools
+org > gnome > desktop > terminal 或者是在 org > gnome > desktop > applications > terminal 
+exec  gnome-terminal
+exec-arg -x
