@@ -1,3 +1,10 @@
+安装qt-5.7
+
+Ubuntu 16.04 环境下：
+sudo add-apt-repository ppa:levi-armstrong/qt-libraries-xenial  
+sudo add-apt-repository ppa:levi-armstrong/ppa  
+sudo apt-get update && sudo apt-get install qt57creator-plugin-ros 
+
 解决ubuntu qt不支持中文的问题
 总结一下解决过程，非常简单：
 （1）安装fcitx-frontend-qt5，命令行里输入sudo apt-get install fcitx-frontend-qt5
