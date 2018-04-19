@@ -1,2 +1,3 @@
 tightvncserver  vnc连接
 nmtui-connect 链接网络  
+df -h 查看磁盘分区
