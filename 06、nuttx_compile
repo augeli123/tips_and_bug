@@ -7,7 +7,7 @@ autoconf automake libtool curl gettext libgmp-dev pkg-config
 下载源码
 git clone https://bitbucket.org/nuttx/nuttx
 git clone https://bitbucket.org/nuttx/apps
-git clonehttps://bitbucket.org/nuttx/tools
+git clone https://bitbucket.org/nuttx/tools
 
 编译安装kconfig-frontends
 ./bootstrap 
