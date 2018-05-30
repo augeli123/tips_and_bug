@@ -7,3 +7,6 @@ https://www.cnblogs.com/voyagee/articles/6898278.html
 /usr/bin/ld: CMakeFiles/Stereo.dir/src/ros_stereo.cc.o: undefined reference to symbol '_ZN5boost6system15system_categoryEv'
 /usr/lib/x86_64-linux-gnu/libboost_system.so: error adding symbols: DSO missing from command line
 - 出错原因为：libboost_system.so 与libboost_filesystem.so找不到链接目录 
+
+源码编译安装suitesparse
+libopenblas-dev
