@@ -12,3 +12,10 @@ https://www.cnblogs.com/voyagee/articles/6898278.html
 libopenblas-dev
 indigo
 git@github.com:ethz-asl/nlopt.git
+
+
+sudo add-apt-repository --yes ppa:xqms/opencv-nonfree
+sudo apt-get update 
+sudo apt-get install libopencv-nonfree-dev
+
+ -lopencv_nonfree
