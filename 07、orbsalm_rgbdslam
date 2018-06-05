@@ -10,3 +10,5 @@ https://www.cnblogs.com/voyagee/articles/6898278.html
 
 源码编译安装suitesparse
 libopenblas-dev
+indigo
+git@github.com:ethz-asl/nlopt.git
