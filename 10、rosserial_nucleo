@@ -1,7 +1,8 @@
 1、安装gcc4mbed
+～/.bashrc文件中添加所需路径信息
+export GCC4MBED_DIR=~/gcc4mbed
 2、编译安装rosserial
 3、rosrun rosserial_mbed make_libraries.py ~/ros/lib
 4、～/.bashrc文件中添加所需路径信息
-export GCC4MBED_DIR=~/gcc4mbed
 export ROS_LIB_DIR=~/ros/lib/ros_lib
 5、在rosserial/rosserial_mbed/src/examples/ 中可以添加自己需要的项目
