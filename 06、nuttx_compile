@@ -14,6 +14,7 @@ git clone https://bitbucket.org/nuttx/tools
 ./configure --enable-mconf  
 LD_RUN_PATH=/usr/local/lib make 
 sudo make install 
+再执行 sudo ldconfig
 
 编译一个例子
 cd nuttx/tools
