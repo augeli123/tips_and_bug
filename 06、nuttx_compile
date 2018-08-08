@@ -24,7 +24,9 @@ make menuconfig
 error like
 recipe for target 'do_menuconfig' failed
 Your display is too small to run Menuconfig! //cannot use menuconfig in xshell 
-
+error like
+'aclocal-1.15' is missing on your system.
+Before running ./configure try running autoreconf -f -i. 
 在linux下拷贝的时候有时候会出现cp:omitting directory的错误，目录下面还有目录，不能直接拷贝
 解决办法：递归拷贝  命令：cp -r
 use ftp to download files!
