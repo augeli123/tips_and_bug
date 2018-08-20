@@ -5,8 +5,8 @@
 
 ### 有的软件broken的原因个软件源有关，推荐阿里源，不推荐163源
 
-！[logo](https://www.zybuluo.com/static/img/logo.png)
-### [加下划线的操作]( https://www.zybuluo.com/cmd/ )
+[logo](https://www.zybuluo.com/static/img/logo.png)
+### [超链接高亮]( https://www.zybuluo.com/cmd/ )
 
 ### TOdo list的制作
 
@@ -35,4 +35,5 @@ int main()
   cout<<"hello world"<<endl;
   system("pause");
 }
+```
 
