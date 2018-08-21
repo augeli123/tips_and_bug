@@ -13,10 +13,10 @@
 - [ ] 未完成
 - [X] 已完成
 
-###公式书写
-$$$E=mc^2$$
+### 公式书写
+$$$ E=mc^2$$
 
-###代码高亮
+### 代码高亮
 ```python
 @requires_authorization
 class SomeClass:
