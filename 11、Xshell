@@ -1,4 +1,7 @@
 shift + insert用于粘贴
 
 使用xftp传输文件，出现权限错误，解决方案，将目的文件夹权限修改，chmod 777 disdir
+
+虚拟机网络开机慢
+sudo vim /etc/systemd/system/network-online.target.wants/networking.service
  
