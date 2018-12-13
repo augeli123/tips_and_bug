@@ -4,4 +4,6 @@ shift + insert用于粘贴
 
 虚拟机网络开机慢
 sudo vim /etc/systemd/system/network-online.target.wants/networking.service
+
+这边update失败，换成了图形化界面的ubuntu
  
